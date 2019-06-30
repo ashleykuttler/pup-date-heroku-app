@@ -2,24 +2,20 @@
 
 import sqlalchemy
 
-
+#pip install Flask-MySQLdb
 from flask import Flask, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_mysqldb import MySQL
-#pip install Flask-MySQLdb
+
 import json
-
-
-from config import password
-
 
 
 app = Flask(__name__)
 
-app.config['MYSQL_HOST'] = '127.0.0.1'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = password
-app.config['MYSQL_DB'] = 'doggy_db'
+app.config['MYSQL_HOST'] = 'k2pdcy98kpcsweia.cbetxkdyhwsb.us-east-1.rds.amazonaws.com'
+app.config['MYSQL_USER'] = 'yp4h3nbpaqgm9z8c'
+app.config['MYSQL_PASSWORD'] = 'z0s17ip96lnvhlwg'
+app.config['MYSQL_DB'] = 'xznsdf2fik8wnexq'
 
 mysql = MySQL(app)
 
